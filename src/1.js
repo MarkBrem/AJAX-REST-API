@@ -30,7 +30,7 @@ function onLoadMore() {
     .then(articles => {
         const markup = createArticleCards(articles)
         articlesContainerRef.insertAdjacentHTML('beforeend', markup) 
-        newsApiService.page += 1    
+        newsApiService.page += 1 
     })
 }  
 
